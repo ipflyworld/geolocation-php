@@ -14,7 +14,7 @@ A dependency-free PHP client for the [IPFly](https://ipfly.world) IP geolocation
 
 ## Where this SDK belongs
 
-This client is meant to run **server-side** — in a web backend, a CLI script, a queue worker, a cron job. It is not meant to be shipped to a browser or a distributed client app where your API token could be extracted. If you need geolocation results in a frontend app, put this SDK behind your own endpoint and call that endpoint from the client (see the [Laravel/Slim proxy example](#examples) below), or use the [IPFly JavaScript SDK](./javascript-sdk.html) with a domain-restricted token for prototyping.
+This client is meant to run **server-side** — in a web backend, a CLI script, a queue worker, a cron job. It is not meant to be shipped to a browser or a distributed client app where your API token could be extracted. If you need geolocation results in a frontend app, put this SDK behind your own endpoint and call that endpoint from the client (see the [Laravel/Slim proxy example](#examples) below), or use the IPFly JavaScript SDK with a domain-restricted token for prototyping.
 
 ---
 
@@ -24,8 +24,7 @@ No Composer package is published — copy `ipfly_sdk.php` into your project.
 
 ```bash
 # from your project root
-curl -O https://your-host/ipfly_sdk.php
-# or just drop the file into your source tree, e.g. src/IPFly/ipfly_sdk.php
+curl -O https://ipfly.world/libs/php-sdk/ipfly_sdk
 ```
 
 ```php
